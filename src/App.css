@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./images/bg-design.png');
+  background-size: cover;
+  background-color:rgba(135, 206, 250, 0.295);
+  background-repeat: no-repeat;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item .active{
+  font-weight: 450!important;
+  border-bottom: 2px solid rgb(51, 146, 153);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-img-top{
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px 25px 0 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.user-avatar{
+  height: 70px;
+  width: 70px;
+}
+.btn-start{
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  border: 2px solid lightskyblue;
+  transition: .3s all linear;
+}
+.btn-start:hover{
+  background-color: lightskyblue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.round-25{
+  border-radius: 25px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home{
+  display: flex;
+  min-height: 90vh;
+  justify-content: center;  
+  align-items: center;
+}
+.home-img{
+  display: flex;
+  margin-left: auto;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
 }
